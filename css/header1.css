@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Initial setting for responsive layout, by making row and then column, floating left for each appearance */
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+[class*="col-"]{
+    float: left;
+    padding: 0;
+    /* border: 1px solid black; */
+}
+
+/* For tiny mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+#header {
+    background-color: #0c8195;
+}
+
+#headerRow1 {
+    padding: 1.5rem 2.5vw 1.5rem 0;
+}
+
+#headerCol1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-bottom: 1.5rem; */
+}
+#headerCol1Left, #headerCol1Right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+#headerCol1Left {
+    cursor: pointer;
+}
+
+#headerCol1Right {
+    padding-right: 30px;
+}
+
+#logo {
+    width: 100px;
+}
+
+#title {
+    font-size: 2.5rem;
+    color: wheat;
+    display: none;
+}
+
+#bars, #times {
+    font-size: 1.25rem;
+    color: white;
+    cursor: pointer;
+}
+
+#times {
+    display: none;
+}
+
+#headerCol2, #headerCol3, #headerCol4 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerCol2 a, #headerCol3 a, #headerCol4 a {
+    width: 30%;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+}
+
+#headerCol2 a, #headerCol3 a {
+    color: white;
+}
+
+#headerCol2 a:hover, #headerCol3 a:hover {
+    color: goldenrod;
+}
+
+#headerCol4 a {
+    font-weight: bolder;
+    color: goldenrod;
+    border: 2px solid goldenrod;
+    border-radius: 2.25rem;
+}
+
+#headerCol4 a:hover {
+    color: white;
+    background-color: goldenrod;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+
+    #headerRow1 {
+        padding: 1.5rem 5vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+
+    #headerRow1 {
+        padding: 1.5rem 7.5vw;
+    }
+
+    #title {
+        display: inherit;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+
+    #headerRow1 {
+        padding: 1.5rem 10vw;
+    }
+
+    #headerRow1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 5rem;
+    }
+
+    #headerCol1Right {
+        display: none;
+    }
+
+    #headerCol2, #headerCol3, #headerCol4 {
+        display: flex;
+    }
+
+    #headerCol2 a, #headerCol3 a, #headerCol4 a {
+        width: 100%;
+    }
+
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .col-xl-1 {width: 8.33%;}
+    .col-xl-2 {width: 16.66%;}
+    .col-xl-3 {width: 25%;}
+    .col-xl-4 {width: 33.33%;}
+    .col-xl-5 {width: 41.66%;}
+    .col-xl-6 {width: 50%;}
+    .col-xl-7 {width: 58.33%;}
+    .col-xl-8 {width: 66.66%;}
+    .col-xl-9 {width: 75%;}
+    .col-xl-10 {width: 83.33%;}
+    .col-xl-11 {width: 91.66%;}
+    .col-xl-12 {width: 100%;}
+
+    #headerRow1 {
+        padding: 2rem 12.5vw;
+    }
+}

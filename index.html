@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/header1.css">
+    <link rel="stylesheet" href="css/intro1.css">
+    <link rel="stylesheet" href="css/studio1.css">
+    <link rel="stylesheet" href="css/works1.css">
+    <link rel="stylesheet" href="css/contact1.css">
+    <link rel="stylesheet" href="css/footer1.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body onload="contactHide()">
+    <div id="header">
+        <div id="headerRow1" class="row">
+            <div id="headerCol1" class="col-lg-9">
+                <div id="headerCol1Left" onmouseover="titleHighlight()" onmouseout="titleNonHighlight()">
+                    <img id="logo" src="gambar/logo-header.png" alt="logo">
+                    <a id="title" href="#">Imperialstech.com</a>
+                </div>
+                <div id="headerCol1Right">
+                    <i id="bars" class="fas fa-bars" onclick="bars()"></i>
+                    <i id="times" class="fas fa-times" onclick="times()"></i>
+                </div>
+            </div>
+            <div id="headerCol2" class="col-lg-1">
+                <a href="#studio" class="col-">Studio</a>
+            </div>
+            <div id="headerCol3" class="col-lg-2">
+                <a href="#works" class="col-">Our Works</a>
+            </div>
+            <div id="headerCol4" class="col-lg-2">
+                <a href="#contact" class="col-" onclick="displayContact()">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div id="intro">
+        <div id="polygonBg">
+            <p data-aos="fade-up" data-aos-duration="1000">We are ready to make 
+                <span><br>digital experience</span> 
+                <span><br>on your business</span>
+            </p>
+            <a href="#" data-aos="fade-up" data-aos-duration="1000">Let us discuss together!</a><br>
+            <i class="fas fa-phone-alt" data-aos="fade-up" data-aos-duration="1000"> +62 899 440 7084</i>
+        </div>
+        <div id="imgContainer" data-aos="fade-up">
+            <img src="gambar/working-girl.png" alt="working" data-aos="fade-up" data-aos-duration="1000">
+        </div>
+    </div>
+    <div id="studio">
+        <h1 data-aos="fade-up" data-aos-duration="1000">The best <span class="golden-span">Digital Agency</span><br>in Jakarta, Indonesia</h1>
+        <p data-aos="fade-up" data-aos-duration="1000">Imperials Tech is a Digital Agency which is engaged in <span class="golden-span">Website Development</span>, <span class="golden-span">Digital Marketing </span>and <span class="golden-span">Social Media Management</span>.</p>
+        <p data-aos="fade-up" data-aos-duration="1000">You can grow your business, online store, company, or branding with us. We are ready to help you to keep growing even better.</p>
+        <img data-aos="fade-up" data-aos-duration="1000" src="gambar/office.png" alt="office">
+    </div>
+    <div id="works">
+        <h1 data-aos="fade-up" data-aos-duration="1000">Please take a look through our <span class="golden-span">featured Digital Trends</span></h1>
+        <div id="slideshow-container">
+            <div class="mySlides fade" data-aos="fade-up" data-aos-duration="1000">
+                <img src="gambar/slide3.jpg">
+                <img src="gambar/slide1.jpg">
+                <img src="gambar/slide2.jpg">
+                <div class="text">
+                    <p id="text-head"><b>Website Development</b></p>
+                    <p id="text-info">Make your business website extraordinary. We will make your website look very attractive.</p>
+                </div>
+            </div>
+            <div class="mySlides fade" data-aos="fade-up" data-aos-duration="1000">
+                <img src="gambar/slide1.jpg">
+                <img src="gambar/slide2.jpg">
+                <img src="gambar/slide3.jpg">
+                <div class="text">
+                    <p id="text-head"><b>Digital Marketing</b></p>
+                    <p id="text-info">We will make yor business even bigger. With a very interesting Digital Marketing strategy.</p>
+                </div>
+            </div>
+            <div class="mySlides fade" data-aos="fade-up" data-aos-duration="1000">
+                <img src="gambar/slide2.jpg">
+                <img src="gambar/slide3.jpg">
+                <img src="gambar/slide1.jpg">
+                <div class="text">
+                    <p id="text-head"><b>Social Media Management</b></p>
+                    <p id="text-info">We will process your business social media with interesting content, so that your business can grow faster.</p>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center" data-aos="fade-up" data-aos-duration="1000">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <h1 id="contactHead">Hey there, Let's <span class="golden-span">talk </span>about <span class="golden-span">creative </span>projects</h1>
+        <p>or email us at techimperials@gmail.com</p>
+        <p>Please follow our <span class="golden-span">social media </span>on the bottom corner.</p>
+        <br><br>
+        <div id="form-container">
+            <form id="contact-form" action="#" class="row">
+                <div id="name" class="col-lg-6">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div id="email" class="col-lg-6">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div id="tell-us" class="col-12">
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                </div>
+                <div id="submit-btn" class="col-12">
+                    <input type="submit" value="Send Message">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-top" class="row">
+            <div id="footer-top1" class="col-12" data-aos="fade-up" data-aos-duration="1000">
+                <h1>We make creative <span class="golden-span">brands</span><br> only.</h1>
+            </div>
+            <div id="footer-top2" class="col-md-5" data-aos="fade-up" data-aos-duration="1000">
+                <p>CONTACT INFO</p>
+                <p><i class="fas fa-phone-alt"></i> +62 899 440 7084</p>
+                <a href="#"><i class="fas fa-envelope"></i> techimperials@gmail.com</a>
+            </div>
+            <div id="footer-top3" class="col-md-7" data-aos="fade-up" data-aos-duration="1000">
+                <p>OUR OFFICE</p>
+                <p><i class="fas fa-home"></i> Pergudangan Prima Center 1, Jl. Pool PPD Jl. Pesing Ponglar, RT 9/RW 2, Kedaung Kali Angke Cengkareng, Jakarta Raya, Indonesia</p>
+            </div>
+        </div>
+        <div id="footer-bottom" class="row">
+            <div id="footer-bottom1" class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                <a href="#">Work With Us</a>
+                <a href="#">Privacy</a>
+            </div>
+            <div id="footer-bottom2" class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div id="footer-bottom3" class="col-12">
+                <p>Copyright &copy 2021 imperialstech.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/header1.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
